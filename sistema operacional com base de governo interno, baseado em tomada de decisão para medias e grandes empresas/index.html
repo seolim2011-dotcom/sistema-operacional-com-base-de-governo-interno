@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>João</title>
+  <meta name="description" content="Sistema operacional de governança interna e tomada de decisão para médias e grandes empresas.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231c5cab'/%3E%3Cpath d='M16 7v18M9 25h14M7 12h3c2.5 0 4.5-1 6-2 1.5 1 3.5 2 6 2h3' fill='none' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script>
+    // aplica o tema salvo antes de pintar, para não piscar
+    try { var t = localStorage.getItem('governa-theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Pular para o conteúdo</a>
+  <div class="app">
+    <aside class="side" id="side" aria-label="Navegação principal"></aside>
+    <div class="scrim" data-act="menu"></div>
+    <div class="col">
+      <header class="top" id="top"></header>
+      <main id="main" class="page" tabindex="-1"></main>
+    </div>
+  </div>
+  <div id="toasts" aria-live="polite"></div>
+  <noscript><p style="padding:24px">O João precisa de JavaScript para funcionar.</p></noscript>
+
+  <script src="js/util.js"></script>
+  <script src="js/domain.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/view-painel.js"></script>
+  <script src="js/view-decisoes.js"></script>
+  <script src="js/view-decisao.js"></script>
+  <script src="js/view-foruns.js"></script>
+  <script src="js/view-governanca.js"></script>
+  <script src="js/view-controle.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
